@@ -119,15 +119,20 @@ body {font-family: Helvetica, sans-serif;}
 </video>
 
 <!-- Optional: some overlay text to describe the video -->
-
+<!--
 <div class="content-bottom">
   <h1>LEGO Wayfinder Workshop @ MIT Media Lab</h1>
   <p width="80%">On July 13/14 2018 more than 40 National Geographic Explorers set out to build underwaters robots and venture into the dark and ominous waters of the Boston harbor. Here is what they did. And what they found. Click on the tiles to see the work of each team.</p>
 </div>
-
+-->
+    
 <div class="content-top">
+    
+    <h1>LEGO Wayfinder Workshop @ MIT Media Lab</h1>
+  <p width="80%">On July 13/14 2018 more than 40 National Geographic Explorers set out to build underwaters robots and venture into the dark and ominous waters of the Boston harbor. Here is what they did. And what they found. Click on the tiles to see the work of each team.</p>
     <!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Modal</button>
+<button id="myBtn1">Open Modal</button>
+    <button id="myBtn2">Open Modal</button>
 
   <a style="color:white;" href="team1.html">Team 1</a> | <a style="color:white;" href="team2.html">Team 2</a> | <a style="color:white;" href="team3.html">Team 4</a>
 </div>
@@ -135,23 +140,13 @@ body {font-family: Helvetica, sans-serif;}
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
-
   <!-- Modal content -->
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">&times;</span>
-      <h2>Modal Header</h2>
-    </div>
+    <div class="modal-content">
     <div class="modal-body">
-      <p>Some text in the Modal Body</p>
-      <p>Some other text</p>
+      <!-- <p>Use this for more content/text</p> -->
       <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSVz8GKll7hbyzzjPexk-cd4hL3ICf-yhHLuv3Ox8MZhfaK-dfS2AgKpJwqPmMLXMYuyrKo8DdAgc7a/embed?start=false&loop=false&delayms=3000&slide=3" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     </div>
-    <div class="modal-footer">
-      <h3>Modal Footer</h3>
-    </div>
   </div>
-
 </div>
 
 <script>
@@ -159,13 +154,21 @@ body {font-family: Helvetica, sans-serif;}
 var modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btn2 = document.getElementById("myBtn2");
+
+// When the user clicks the button, open the modal 
+btn2.onclick = function() {
+    modal.style.display = "block";
+}
+    
+// Get the button that opens the modal
+var btn1 = document.getElementById("myBtn1");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
-btn.onclick = function() {
+btn1.onclick = function() {
     modal.style.display = "block";
 }
 
