@@ -1,4 +1,10 @@
-## Welcome to GitHub Pages
+## Introduction / Wayfinder Site 
+
+This is a temporary website to document the LEGO Wayfinder workshop - July 13/14 2018 @ MIT 
+
+We used GitHub Pages to throw together this site. 
+
+## GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/ml-learning/wayfinder/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
 
