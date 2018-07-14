@@ -139,7 +139,7 @@ body {font-family: Helvetica, sans-serif;}
    
 
 <!-- The Modal -->
-<div id="myModal" class="modal">
+<div id="myModal1" class="modal">
   <!-- Modal content -->
     <div class="modal-content">
     <div class="modal-body">
@@ -149,18 +149,38 @@ body {font-family: Helvetica, sans-serif;}
   </div>
 </div>
 
+    <div id="myModal2" class="modal">
+  <!-- Modal content -->
+    <div class="modal-content">
+    <div class="modal-body">
+      <!-- <p>Use this for more content/text</p> -->
+      Modal 2
+    </div>
+  </div>
+</div>
+    
+    
 <script>
-// Get the modal
-var modal = document.getElementById('myModal');
 
+    // Get the modal
+var modal1 = document.getElementById('myModal1');
+
+    // Get the modal
+var modal2 = document.getElementById('myModal2');
+
+    
 // Get the button that opens the modal
 var btn2 = document.getElementById("myBtn2");
 
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
 // When the user clicks the button, open the modal 
 btn2.onclick = function() {
-    modal.style.display = "block";
+    modal2.style.display = "block";
 }
-    
+
+
 // Get the button that opens the modal
 var btn1 = document.getElementById("myBtn1");
 
