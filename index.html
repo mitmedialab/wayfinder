@@ -1,1 +1,356 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<title>LEGO Wayfinder @ MIT Media Lab</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <style>
+        
+body {font-family: Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #000000;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #000000;
+    width: 80%;
+/*    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);*/
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #000000;
+    color: white;
+}
+
+/*.modal-body {padding: 2px 16px;}*/
+.modal-body {padding: 0px 0px;}
+        
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #000000;
+    color: white;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#wayfindervideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+/* Add some content at the bottom of the video/page */
+.content-top {
+    font-family: Helvetica, sans-serif;
+    position: fixed;
+    top: 10;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 80%;
+    padding: 20px;
+}
+.content-bottom {
+    font-family: Helvetica, sans-serif;
+    position: fixed;
+    bottom: 10;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 80%;
+    padding: 20px;
+}
+        
+    
+    </style>
+    
+    
+</head>
+<body>
+
+    <video autoplay muted loop id="wayfindervideo">
+  <source src="wayfinder-480.mp4" type="video/mp4">
+</video>
+
+<!-- Optional: some overlay text to describe the video -->
+<!--
+<div class="content-bottom">
+  <h1>LEGO Wayfinder Workshop @ MIT Media Lab</h1>
+  <p width="80%">On July 13/14 2018 more than 40 National Geographic Explorers set out to build underwaters robots and venture into the dark and ominous waters of the Boston harbor. Here is what they did. And what they found. Click on the tiles to see the work of each team.</p>
+</div>
+-->
+    
+<div class="content-bottom">
+    
+    <h1>LEGO Wayfinder Workshop @ MIT Media Lab</h1>
+    <p width="80%">On July 13/14 2018 more than 40 National Geographic Explorers set out to build underwaters robots and venture into the dark and ominous waters of the Boston harbor. Here is what they did. And what they found. Click on the tiles to see the work of each team.</p>
+   
+    <!-- Trigger/Open The Modal -->
+    Teams: 
+    <button id="myBtn1">Titanic</button> 
+    <button id="myBtn2">Mantis</button> 
+    <button id="myBtn3">B.O.B.</button> 
+    <button id="myBtn4">FOUЯ</button>
+    <button id="myBtn5">Planktophiles</button>
+    <button id="myBtn6">KAREN</button>
+    <button id="myBtn7">Chum Bucket</button>
+    <button id="myBtn8">Clarity</button>
+<br>
+    <p>
+Collaborators<br>
+        <img src="natgeo-logo.png" height="50" border=0 alt="natgeo logo"> <img src="lego-logo.png" border=0 height="44" alt="LEGO logo"> <img src="aquarium-logo.png" border=0 height="40" alt="Aquarium logo"> &nbsp; <img src="sea-grant-logo.jpg" border=0 height="40" alt="Sea Grant logo"> <img src="tim-logo.png" border=0 height="33" alt="TIM logo"> <img src="ml-logo-wb.png" height="43" border=0 alt="Media Lab logo">        
+</div>
+
+<div id="myModal1" class="modal">
+  <!-- Modal content -->
+    <div class="modal-content">
+    <div class="modal-body">
+      <!-- <p>Use this for more content/text</p> -->
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSVz8GKll7hbyzzjPexk-cd4hL3ICf-yhHLuv3Ox8MZhfaK-dfS2AgKpJwqPmMLXMYuyrKo8DdAgc7a/embed?start=false&loop=false&delayms=3000&slide=2" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+  </div>
+</div>
+
+<div id="myModal2" class="modal">
+  <!-- Modal content -->
+    <div class="modal-content">
+    <div class="modal-body">
+      <!-- <p>Use this for more content/text</p> -->
+              <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSVz8GKll7hbyzzjPexk-cd4hL3ICf-yhHLuv3Ox8MZhfaK-dfS2AgKpJwqPmMLXMYuyrKo8DdAgc7a/embed?start=false&loop=false&delayms=3000&slide=5" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+  </div>
+</div>
+
+    <div id="myModal3" class="modal">
+  <!-- Modal content -->
+    <div class="modal-content">
+    <div class="modal-body">
+      <!-- <p>Use this for more content/text</p> -->
+              <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSVz8GKll7hbyzzjPexk-cd4hL3ICf-yhHLuv3Ox8MZhfaK-dfS2AgKpJwqPmMLXMYuyrKo8DdAgc7a/embed?start=false&loop=false&delayms=3000&slide=7" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+  </div>
+</div>
+    
+    <div id="myModal4" class="modal">
+  <!-- Modal content -->
+    <div class="modal-content">
+    <div class="modal-body">
+      <!-- <p>Use this for more content/text</p> -->
+              <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSVz8GKll7hbyzzjPexk-cd4hL3ICf-yhHLuv3Ox8MZhfaK-dfS2AgKpJwqPmMLXMYuyrKo8DdAgc7a/embed?start=false&loop=false&delayms=3000&slide=9" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+  </div>
+</div>
+    
+    <div id="myModal5" class="modal">
+  <!-- Modal content -->
+    <div class="modal-content">
+    <div class="modal-body">
+      <!-- <p>Use this for more content/text</p> -->
+              <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSVz8GKll7hbyzzjPexk-cd4hL3ICf-yhHLuv3Ox8MZhfaK-dfS2AgKpJwqPmMLXMYuyrKo8DdAgc7a/embed?start=false&loop=false&delayms=3000&slide=11" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+  </div>
+</div>
+    
+    
+   <div id="myModal6" class="modal">
+  <!-- Modal content -->
+    <div class="modal-content">
+    <div class="modal-body">
+      <!-- <p>Use this for more content/text</p> -->
+              <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSVz8GKll7hbyzzjPexk-cd4hL3ICf-yhHLuv3Ox8MZhfaK-dfS2AgKpJwqPmMLXMYuyrKo8DdAgc7a/embed?start=false&loop=false&delayms=3000&slide=13" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+  </div>
+</div>
+    
+    <div id="myModal7" class="modal">
+  <!-- Modal content -->
+    <div class="modal-content">
+    <div class="modal-body">
+      <!-- <p>Use this for more content/text</p> -->
+              <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSVz8GKll7hbyzzjPexk-cd4hL3ICf-yhHLuv3Ox8MZhfaK-dfS2AgKpJwqPmMLXMYuyrKo8DdAgc7a/embed?start=false&loop=false&delayms=3000&slide=15" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+  </div>
+</div>
+    
+    <div id="myModal8" class="modal">
+  <!-- Modal content -->
+    <div class="modal-content">
+    <div class="modal-body">
+      <!-- <p>Use this for more content/text</p> -->
+              <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSVz8GKll7hbyzzjPexk-cd4hL3ICf-yhHLuv3Ox8MZhfaK-dfS2AgKpJwqPmMLXMYuyrKo8DdAgc7a/embed?start=false&loop=false&delayms=3000&slide=17" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+  </div>
+</div>
+    
+<script>
+
+    // Get the modal
+var modal1 = document.getElementById('myModal1');
+
+    // Get the modal
+var modal2 = document.getElementById('myModal2');
+
+        // Get the modal
+var modal3 = document.getElementById('myModal3');
+
+        // Get the modal
+var modal4 = document.getElementById('myModal4');
+
+        // Get the modal
+var modal5 = document.getElementById('myModal5');
+
+        // Get the modal
+var modal6 = document.getElementById('myModal6');
+
+        // Get the modal
+var modal7 = document.getElementById('myModal7');
+
+        // Get the modal
+var modal8 = document.getElementById('myModal8');
+
+
+    // Get the button that opens the modal
+var btn1 = document.getElementById("myBtn1");
+
+// When the user clicks the button, open the modal 
+btn1.onclick = function() {
+    modal1.style.display = "block";
+}
+
+// Get the button that opens the modal
+var btn2 = document.getElementById("myBtn2");
+
+// When the user clicks the button, open the modal 
+btn2.onclick = function() {
+    modal2.style.display = "block";
+}
+
+    // Get the button that opens the modal
+var btn3 = document.getElementById("myBtn3");
+
+// When the user clicks the button, open the modal 
+btn3.onclick = function() {
+    modal3.style.display = "block";
+}
+
+    // Get the button that opens the modal
+var btn4 = document.getElementById("myBtn4");
+
+// When the user clicks the button, open the modal 
+btn4.onclick = function() {
+    modal4.style.display = "block";
+}
+
+    // Get the button that opens the modal
+var btn5 = document.getElementById("myBtn5");
+
+// When the user clicks the button, open the modal 
+btn5.onclick = function() {
+    modal5.style.display = "block";
+}
+
+    // Get the button that opens the modal
+var btn6 = document.getElementById("myBtn6");
+
+// When the user clicks the button, open the modal 
+btn6.onclick = function() {
+    modal6.style.display = "block";
+}
+
+    // Get the button that opens the modal
+var btn7 = document.getElementById("myBtn7");
+
+// When the user clicks the button, open the modal 
+btn7.onclick = function() {
+    modal7.style.display = "block";
+}
+
+    // Get the button that opens the modal
+var btn8 = document.getElementById("myBtn8");
+
+// When the user clicks the button, open the modal 
+btn8.onclick = function() {
+    modal8.style.display = "block";
+}
+
+    
+    
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal1) {
+        modal1.style.display = "none";
+    }
+    if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+        if (event.target == modal3) {
+        modal3.style.display = "none";
+    }
+        if (event.target == modal4) {
+        modal4.style.display = "none";
+    }
+        if (event.target == modal5) {
+        modal5.style.display = "none";
+    }
+        if (event.target == modal6) {
+        modal6.style.display = "none";
+    }
+        if (event.target == modal7) {
+        modal7.style.display = "none";
+    }
+        if (event.target == modal8) {
+        modal8.style.display = "none";
+    }
+    
+}
+</script>
+
+</body>
+</html>

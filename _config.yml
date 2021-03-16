@@ -1,0 +1,23 @@
+# Setup
+title: LEGO Wayfinder workshop @ MIT Media Lab
+email: learn@media.mit.edu
+description: >-
+  The LEGO Wayfinder workshop took place on July 13/14 2018
+  More than 50 National Geographic Explorers and a small team 
+  from the MIT Media Lab and LEGO built underwater robots and 
+  launched them into the Boston harbor. 
+baseurl: "/"
+url: "https://learn.media.mit.edu/wayfinder"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+include: ['_pages']
+
+# Assets
+sass:
+  style: :compressed
+
+redirects: yes
